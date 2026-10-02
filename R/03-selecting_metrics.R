@@ -35,6 +35,8 @@ tm_shape(builtup_areas) +
     title = "Types of built-up areas"
   )
 
+set.seed(7864513)
+
 metrics_df <- data.frame(
      circularity  = vm_p_circ(builtup_areas)$value,
      circle       = vm_p_circle(builtup_areas)$value,
